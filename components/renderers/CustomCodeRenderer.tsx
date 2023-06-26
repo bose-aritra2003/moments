@@ -1,37 +1,22 @@
 'use client'
 
-import React from 'react';
-import ReactHighlightSyntax from 'react-highlight-syntax';
+import 'highlight.js/styles/monokai.css';
+import hljs from 'highlight.js/lib/common';
+import {useEffect} from "react";
 
 function CustomCodeRenderer({ data }: any) {
+    useEffect(() => {
+        hljs.highlightAll();
+    }, []);
 
   return (
-    <ReactHighlightSyntax
-      language='C'
-      theme='Monokai'
-      copy
-      copyBtnTheme='Dark'
-    >
-      {data.code}
-    </ReactHighlightSyntax>
+    <pre>
+      <code className="hljs rounded-md">
+        {data.code}
+      </code>
+    </pre>
+
   )
 }
 
 export default CustomCodeRenderer
-
-
-
-
-// import SyntaxHighlighter from 'react-syntax-highlighter';
-// import { monokai } from "react-syntax-highlighter/dist/esm/styles/hljs";
-//
-// function CustomCodeRenderer({ data }: any) {
-//
-//   return (
-//     <SyntaxHighlighter language="c" style={monokai}>
-//       {data.code}
-//     </SyntaxHighlighter>
-//   )
-// }
-//
-// export default CustomCodeRenderer

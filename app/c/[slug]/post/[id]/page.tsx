@@ -82,7 +82,7 @@ const Page = async ({ params }: PageProps) => {
           }{' • '}
           {nFormatter(post.votes.length, 1)} vote{post.votes.length !== 1 && 's'}
         </p>
-        <h1 className="flex gap-2 items-center text-xl font-semibold py-2 leading-6 text-gray-900">
+        <h1 className="flex flex-wrap gap-2 items-center text-2xl font-semibold py-2 leading-6 text-gray-900 mb-2">
           { post.title }
           {
             post.isNsfw && (
@@ -95,6 +95,8 @@ const Page = async ({ params }: PageProps) => {
             )
           }
         </h1>
+
+        <hr className="bg-gray-500 h-px mb-4"/>
 
         <EditorOutput content={post.content} />
 

@@ -54,7 +54,7 @@ const PostPreview: FC<PostPreviewProps> = ({ communityName, post, commentCount, 
           </div>
 
           <Link href={`/c/${communityName}/post/${post.id}`}>
-            <h1 className="text-lg font-semibold py-2 leading-6 text-gray-900 flex gap-2 items-center">
+            <h1 className="text-2xl font-semibold py-2 leading-6 text-gray-900 flex flex-wrap gap-2 items-center">
               {post.title}
               {
                 post.isNsfw && (
@@ -68,6 +68,8 @@ const PostPreview: FC<PostPreviewProps> = ({ communityName, post, commentCount, 
               }
             </h1>
           </Link>
+
+          <hr className="bg-gray-500 h-px mb-4"/>
 
           <div
             ref={postRef}

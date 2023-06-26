@@ -49,7 +49,6 @@ const Editor: FC<EditorProps> = ({ communityId }) => {
   const initialiseEditor = useCallback(async () => {
     const EditorJS = (await import('@editorjs/editorjs')).default
     const Header = (await import('@editorjs/header')).default
-    const Embed = (await import('@editorjs/embed')).default
     const Table = (await import('@editorjs/table')).default
     const List = (await import('@editorjs/list')).default
     const Code = (await import('@editorjs/code')).default
@@ -94,7 +93,6 @@ const Editor: FC<EditorProps> = ({ communityId }) => {
           code: Code,
           inlineCode: InlineCode,
           table: Table,
-          embed: Embed,
         },
       });
     }

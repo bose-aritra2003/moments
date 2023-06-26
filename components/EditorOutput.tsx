@@ -4,6 +4,8 @@ import {FC} from 'react';
 import dynamic from "next/dynamic";
 import CustomImageRenderer from "@/components/renderers/CustomImageRenderer";
 import CustomCodeRenderer from "@/components/renderers/CustomCodeRenderer";
+import CustomListRenderer from "@/components/renderers/CustomListRenderer";
+import CustomHeaderRenderer from "@/components/renderers/CustomHeaderRenderer";
 
 const Output = dynamic(async () => (
   await import('editorjs-react-renderer')).default,
@@ -26,6 +28,8 @@ const style = {
 const renderers = {
   image: CustomImageRenderer,
   code: CustomCodeRenderer,
+  list: CustomListRenderer,
+  header: CustomHeaderRenderer,
 };
 
 const EditorOutput: FC<EditorOutputProps> = ({ content }) => {
