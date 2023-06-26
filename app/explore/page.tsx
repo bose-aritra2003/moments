@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://moments-community.vercel.app/explore',
+    url: 'https://moments-connect.vercel.app/explore',
     title: "Moments - Explore",
     siteName: 'Moments',
     description: "Explore communities to subscribe on Moments",

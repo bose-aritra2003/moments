@@ -10,7 +10,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://moments-community.vercel.app/settings',
+    url: 'https://moments-connect.vercel.app/settings',
     title: "Moments - Settings",
     siteName: 'Moments',
     description: "Profile settings for your Moments account",
