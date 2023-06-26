@@ -18,7 +18,7 @@ const Navbar = async () => {
           <Image
             width={64}
             height={64}
-            src="/logo.svg"
+            src="/icon.svg"
             alt="logo"
             className="h-10 w-10"
           />

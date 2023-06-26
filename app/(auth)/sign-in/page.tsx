@@ -13,7 +13,7 @@ export const metadata = {
     description: "Sign in to your Moments account",
     images: [
       {
-        url: '/logo.svg',
+        url: '/icon.svg',
         width: 256,
         height: 256,
       }

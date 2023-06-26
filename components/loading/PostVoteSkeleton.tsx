@@ -1,6 +1,5 @@
 import {buttonVariants} from "@/components/ui/Button";
-import {CgSpinner} from "react-icons/cg";
-import {ThumbsDown, ThumbsUp} from "lucide-react";
+import {Loader2, ThumbsDown, ThumbsUp} from "lucide-react";
 
 const PostVoteSkeleton = () => {
   return (
@@ -9,7 +8,7 @@ const PostVoteSkeleton = () => {
         <ThumbsUp className="h-5 w-5" />
       </div>
       <div className="text-center py-2 font-medium text-sm text-gray-900">
-        <CgSpinner className="text-gray-900 h-5 w-5 animate-spin"/>
+        <Loader2 className="text-gray-900 h-5 w-5 animate-spin"/>
       </div>
       <div className={buttonVariants({ variant: 'ghost', size: 'sm' })}>
         <ThumbsDown className="h-5 w-5" />

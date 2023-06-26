@@ -16,7 +16,7 @@ export const metadata = {
     description: "Profile settings for your Moments account",
     images: [
       {
-        url: '/logo.svg',
+        url: '/icon.svg',
         width: 256,
         height: 256,
       }

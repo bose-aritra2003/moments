@@ -2,7 +2,7 @@
 
 import {useRouter} from 'next/navigation'
 import {Button} from "@/components/ui/Button";
-import {HiChevronLeft} from "react-icons/hi2";
+import {ChevronLeft} from "lucide-react";
 
 const BackButton = () => {
   const router = useRouter();
@@ -12,7 +12,7 @@ const BackButton = () => {
       variant="subtle"
       onClick={() => router.back()}
     >
-      <HiChevronLeft className='h-4 w-4 mr-1'/>
+      <ChevronLeft className='h-4 w-4 mr-1'/>
       Back
     </Button>
   )

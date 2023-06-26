@@ -6,8 +6,7 @@ import {Session} from "next-auth";
 import UserAvatar from "@/components/UserAvatar";
 import {Input} from "@/components/ui/Input";
 import {Button} from "@/components/ui/Button";
-import {AiOutlineLink} from "react-icons/ai";
-import {BsImage} from "react-icons/bs";
+import {Camera, Link} from "lucide-react";
 
 interface MiniCreatePostProps {
   session: Session | null
@@ -43,14 +42,14 @@ const MiniCreatePost: FC<MiniCreatePostProps> = ({ session }) => {
             variant='ghost'
             size="icon"
           >
-            <BsImage className="h-5 w-5 text-gray-600 hover:text-emerald-700"/>
+            <Camera className="h-5 w-5 text-gray-600 hover:text-emerald-700"/>
           </Button>
           <Button
             onClick={() => router.push(`${pathname}/submit`)}
             variant='ghost'
             size="icon"
           >
-            <AiOutlineLink className="h-5 w-5 text-gray-600 hover:text-emerald-700"/>
+            <Link className="h-5 w-5 text-gray-600 hover:text-emerald-700"/>
           </Button>
         </div>
 

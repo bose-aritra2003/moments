@@ -2,12 +2,11 @@
 
 import {FC} from "react";
 import {Button} from "@/components/ui/Button";
-import {AlertTriangle, Trash2} from "lucide-react";
+import {AlertTriangle, Loader2, Trash2} from "lucide-react";
 import {useRouter} from "next/navigation";
 import {useMutation} from "@tanstack/react-query";
 import axios, {AxiosError} from "axios";
 import toast from "react-hot-toast";
-import {CgSpinner} from "react-icons/cg";
 import {
   Dialog,
   DialogContent,
@@ -88,7 +87,7 @@ const PostDeleteBtn: FC<PostDeleteBtnProps> = ({ id }) => {
             aria-label='confirm delete post'
             onClick={() => deletePost()}
           >
-            { isLoading && <CgSpinner className="h-4 w-4 mr-2 animate-spin" /> }
+            { isLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" /> }
             Delete
           </Button>
         </DialogFooter>

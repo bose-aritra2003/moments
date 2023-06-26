@@ -14,7 +14,7 @@ export const metadata = {
     description: "Explore communities to subscribe on Moments",
     images: [
       {
-        url: '/logo.svg',
+        url: '/icon.svg',
         width: 256,
         height: 256,
       }

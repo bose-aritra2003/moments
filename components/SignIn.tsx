@@ -19,7 +19,7 @@ const SignIn: FC = () => {
         <Image
           width={64}
           height={64}
-          src="/logo.svg"
+          src="/icon.svg"
           alt="logo"
           className="mx-auto h-12 w-12"
         />

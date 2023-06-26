@@ -16,8 +16,7 @@ import {useRouter} from "next/navigation";
 import {uploadFiles} from "@/lib/uploadthing";
 import {ZodError} from "zod";
 import {getRandomUsername} from "@/lib/utils";
-import {CgSpinner} from "react-icons/cg";
-import {AlertCircle, RotateCw, UserCircle2} from "lucide-react";
+import {AlertCircle, Loader2, RotateCw, UserCircle2} from "lucide-react";
 
 interface UserNameFormProps {
   user: Pick<User, 'id' | 'username' | 'image'>;
@@ -194,7 +193,7 @@ const UserNameForm: FC<UserNameFormProps> = ({ user }) => {
             type="submit"
             disabled={isLoading}
           >
-            {isLoading && <CgSpinner className="h-4 w-4 mr-2 animate-spin" />}
+            {isLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
             Update
           </Button>
         </CardFooter>

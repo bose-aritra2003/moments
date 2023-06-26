@@ -5,13 +5,13 @@ import {Checkbox} from "@/components/ui/Checkbox";
 import {Label} from "@/components/ui/Label";
 import {Badge} from "@/components/ui/Badge";
 import {Button} from "@/components/ui/Button";
-import {CgSpinner} from "react-icons/cg";
 import {useState} from "react";
 import {useRouter} from "next/navigation";
 import {useMutation} from "@tanstack/react-query";
 import {CreateCommunitySchema} from "@/lib/validators/community";
 import axios, {AxiosError} from "axios";
 import toast from "react-hot-toast";
+import {Loader2} from "lucide-react";
 
 const CreateCommunityForm = () => {
   const [input, setInput] = useState('');
@@ -104,7 +104,7 @@ const CreateCommunityForm = () => {
           disabled={input.length === 0 || isLoading}
           onClick={() => createCommunity()}
         >
-          {isLoading && <CgSpinner className="h-4 w-4 mr-2 animate-spin" />}
+          {isLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
           Create
         </Button>
       </div>

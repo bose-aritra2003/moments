@@ -16,7 +16,7 @@ import {Checkbox} from "@/components/ui/Checkbox";
 import {Label} from "@/components/ui/Label";
 import {Badge} from "@/components/ui/Badge";
 import {Button} from "@/components/ui/Button";
-import {CgSpinner} from "react-icons/cg";
+import {Loader2} from "lucide-react";
 
 interface EditorProps {
   communityId: string;
@@ -227,7 +227,7 @@ const Editor: FC<EditorProps> = ({ communityId }) => {
           className="w-full"
           form="community-post-form"
         >
-          { isLoading && <CgSpinner className="h-4 w-4 mr-2 animate-spin" /> }
+          { isLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" /> }
           Post
         </Button>
       </form>

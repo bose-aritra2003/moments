@@ -10,7 +10,7 @@ import axios from "axios";
 import {AxiosError} from "axios";
 import toast from "react-hot-toast";
 import {useRouter} from "next/navigation";
-import {CgSpinner} from "react-icons/cg";
+import {Loader2} from "lucide-react";
 
 interface CreateCommentProps {
   postId: string;
@@ -62,7 +62,7 @@ const CreateComment: FC<CreateCommentProps> = ({ postId, replyToId }) => {
             disabled={input.length === 0 || isLoading}
             onClick={() => comment({ postId, text: input, replyToId })}
           >
-            { isLoading && <CgSpinner className="h-4 w-4 mr-2 animate-spin" /> }
+            { isLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" /> }
             Comment
           </Button>
         </div>

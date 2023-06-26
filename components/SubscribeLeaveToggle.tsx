@@ -7,7 +7,7 @@ import {SubscribeToCommunitySchema} from "@/lib/validators/community";
 import axios, {AxiosError} from "axios";
 import toast from "react-hot-toast";
 import {useRouter} from "next/navigation";
-import {CgSpinner} from "react-icons/cg";
+import {Loader2} from "lucide-react";
 
 interface SubscribeLeaveToggleProps {
   communityId: string;
@@ -82,7 +82,7 @@ const SubscribeLeaveToggle: FC<SubscribeLeaveToggleProps> = ({ communityId, comm
             variant="destructive"
             className="w-full mt-1 mb-4"
           >
-            {isUnsubscribeLoading && <CgSpinner className="h-4 w-4 mr-2 animate-spin" />}
+            {isUnsubscribeLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
             Leave community
           </Button>
         ) : (
@@ -91,7 +91,7 @@ const SubscribeLeaveToggle: FC<SubscribeLeaveToggleProps> = ({ communityId, comm
             disabled={isSubscribeLoading}
             className="w-full mt-1 mb-4"
           >
-            {isSubscribeLoading && <CgSpinner className="h-4 w-4 mr-2 animate-spin" />}
+            {isSubscribeLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
             Subscribe to post
           </Button>
         )

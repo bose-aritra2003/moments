@@ -15,8 +15,7 @@ import {Textarea} from "@/components/ui/Textarea";
 import {useMutation} from "@tanstack/react-query";
 import {CommentSchema} from "@/lib/validators/comment";
 import axios from "axios";
-import {CgSpinner} from "react-icons/cg";
-import {Reply} from "lucide-react";
+import {Loader2, Reply} from "lucide-react";
 import CommentDeleteBtn from "@/components/CommentDeleteBtn";
 
 interface PostCommentProps {
@@ -146,7 +145,7 @@ const PostComment: FC<PostCommentProps> = ({ comment, voteCount, currentVote, po
                     disabled={input.length === 0 || isLoading}
                     onClick={() => reply({ postId, text: input, replyToId: comment.replyToId ?? comment.id })}
                   >
-                    {isLoading && <CgSpinner className="h-4 w-4 mr-2 animate-spin"/>}
+                    {isLoading && <Loader2 className="h-4 w-4 mr-2 animate-spin"/>}
                     Reply
                   </Button>
                 </div>

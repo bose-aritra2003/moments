@@ -5,9 +5,8 @@ import {Button} from "@/components/ui/Button";
 import {cn} from "@/lib/utils";
 import {signIn} from "next-auth/react";
 import toast from "react-hot-toast";
-import {CgSpinner} from "react-icons/cg";
 import {Icons} from '@/components/Icons'
-import {Github} from "lucide-react";
+import {Github, Loader2} from "lucide-react";
 
 interface AuthFormProps extends React.HTMLAttributes<HTMLDivElement> {
 }
@@ -53,7 +52,7 @@ const AuthForm: FC<AuthFormProps> = ({className, ...props}) => {
       >
         {
           isGithubLoading ?
-            <CgSpinner className="h-4 w-4 mr-2 animate-spin"/> :
+            <Loader2 className="h-4 w-4 mr-2 animate-spin"/> :
             <Github className="h-4 w-4 mr-2"/>
         }
         Github
@@ -66,7 +65,7 @@ const AuthForm: FC<AuthFormProps> = ({className, ...props}) => {
       >
         {
           isGoogleLoading ?
-            <CgSpinner className="h-4 w-4 mr-2 animate-spin"/> :
+            <Loader2 className="h-4 w-4 mr-2 animate-spin"/> :
             <Icons.Google className="h-4 w-4 mr-2"/>
         }
         Google
