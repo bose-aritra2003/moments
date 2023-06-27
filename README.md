@@ -24,7 +24,7 @@ Powered by [NextJS 13](https://nextjs.org/), [React 18](https://react.dev), [Typ
 - **Communities**: Join existing communities or create your own to discuss specific topics and foster a sense of belonging among individuals with shared interests.
 - **Community Posts**: Share your thoughts, stories, articles, and media with the community, encouraging diverse discussions and content sharing.
 - **Comments and Replies**: Engage in conversations by commenting on posts and replying to other users' comments, promoting interactive and dynamic discussions.
-- **Rich Text Editor**: Craft visually appealing and elegant posts with the help of the intuitive WYSIWYG editor powered by EditorJS.
+- **Rich Text Editor**: Craft visually appealing and elegant posts with the help of the intuitive WYSIWYG editor powered by EditorJS and syntax highlighting with highlightJS.
 - **Voting System**: Express your opinion by liking or disliking posts and comments, enabling users to collectively determine the popularity and relevance of content.
 - **Search and Discover**: Effortlessly explore communities using a robust debounced search feature that swiftly provides relevant results.
 - **NSFW Tags**: Mark communities and posts that may contain content not safe for work as NSFW, ensuring appropriate warnings and allowing users to make informed choices.
