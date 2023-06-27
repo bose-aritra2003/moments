@@ -88,7 +88,7 @@ const Home = () => {
                   License
                 </dt>
                 <dd className="text-gray-900 truncate">
-                  <Link href='#'>
+                  <Link href='https://github.com/bose-aritra2003/moments/blob/main/LICENSE'>
                     2023 MIT
                   </Link>
                 </dd>
