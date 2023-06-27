@@ -17,6 +17,7 @@ import {useQuery} from "@tanstack/react-query";
 import axios from "axios";
 import {Community, Prisma} from "@prisma/client";
 import Link from "next/link";
+import {Badge} from "@/components/ui/Badge";
 
 const SearchBox: FC = () => {
   const [input, setInput] = useState('');
@@ -73,8 +74,19 @@ const SearchBox: FC = () => {
                   <Link
                     href={`/c/${community.name}`}
                     onClick={() => setOpen(false)}
+                    className="flex gap-2 items-center"
                   >
                     c/{community.name}
+                    {
+                      community.isNsfw && (
+                        <Badge
+                          variant="outline"
+                          className="text-[0.5rem] px-1 py-0 border border-rose-600 text-rose-600"
+                        >
+                          NSFW
+                        </Badge>
+                      )
+                    }
                   </Link>
                 </CommandItem>
               ))
