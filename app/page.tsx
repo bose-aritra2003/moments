@@ -76,8 +76,8 @@ const Home = () => {
                   View source
                 </dt>
                 <dd className="text-gray-900 truncate">
-                  <Link href='#'>
-                    Github
+                  <Link href='https://github.com/bose-aritra2003/moments'>
+                    GitHub
                   </Link>
                 </dd>
               </div>
