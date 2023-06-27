@@ -14,14 +14,14 @@ import {Badge} from "@/components/ui/Badge";
 
 export const metadata = {
   title: 'Moments - Community',
-  description: 'Sharing Stories, Shaping Community',
+  description: 'Sharing Stories, Shaping Communities',
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     url: 'https://moments-connect.vercel.app',
     title: "Moments - Community",
     siteName: 'Moments',
-    description: "Sharing Stories, Shaping Community",
+    description: "Sharing Stories, Shaping Communities",
     images: [
       {
         url: '/icon.svg',
@@ -32,7 +32,7 @@ export const metadata = {
   },
   twitter: {
     title: "Moments - Community",
-    description: "Sharing Stories, Shaping Community",
+    description: "Sharing Stories, Shaping Communities",
     card: "summary_large_image",
     images: [
       {

@@ -4,14 +4,14 @@ import Editor from "@/components/Editor";
 
 export const metadata = {
   title: 'Moments - Create post',
-  description: 'Sharing Stories, Shaping Community',
+  description: 'Sharing Stories, Shaping Communities',
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     url: 'https://moments-connect.vercel.app',
     title: "Moments - Create post",
     siteName: 'Moments',
-    description: "Sharing Stories, Shaping Community",
+    description: "Sharing Stories, Shaping Communities",
     images: [
       {
         url: '/icon.svg',
@@ -22,7 +22,7 @@ export const metadata = {
   },
   twitter: {
     title: "Moments - Create post",
-    description: "Sharing Stories, Shaping Community",
+    description: "Sharing Stories, Shaping Communities",
     card: "summary_large_image",
     images: [
       {

@@ -14,14 +14,14 @@ import {BarChart2, MessagesSquare} from "lucide-react";
 
 export const metadata = {
   title: 'Moments - Post',
-  description: 'Sharing Stories, Shaping Community',
+  description: 'Sharing Stories, Shaping Communities',
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     url: 'https://moments-connect.vercel.app',
     title: "Moments - Post",
     siteName: 'Moments',
-    description: "Sharing Stories, Shaping Community",
+    description: "Sharing Stories, Shaping Communities",
     images: [
       {
         url: '/icon.svg',
@@ -32,7 +32,7 @@ export const metadata = {
   },
   twitter: {
     title: "Moments - Post",
-    description: "Sharing Stories, Shaping Community",
+    description: "Sharing Stories, Shaping Communities",
     card: "summary_large_image",
     images: [
       {
