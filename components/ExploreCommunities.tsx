@@ -2,6 +2,8 @@ import {getAuthSession} from "@/lib/auth";
 import prisma from "@/lib/prismadb";
 import CommunityCard from "@/components/CommunityCard";
 
+export const revalidate = 0;
+
 const ExploreCommunities = async () => {
   const session = await getAuthSession();
 
