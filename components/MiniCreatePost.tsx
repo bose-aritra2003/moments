@@ -27,7 +27,7 @@ const MiniCreatePost: FC<MiniCreatePostProps> = ({ session }) => {
             }}
           />
           {
-            session?.user && <span className="absolute bottom-0 right-0 rounded-full w-3 h-3 bg-emerald-500 outline outline-2 outline-white" />
+            session?.user && <span className="absolute bottom-0 right-0 rounded-full w-3 h-3 bg-blue-500 outline outline-2 outline-white" />
           }
         </div>
         <Input
@@ -42,14 +42,14 @@ const MiniCreatePost: FC<MiniCreatePostProps> = ({ session }) => {
             variant='ghost'
             size="icon"
           >
-            <Camera className="h-5 w-5 text-gray-600 hover:text-emerald-700"/>
+            <Camera className="h-5 w-5 text-gray-600 hover:text-blue-700"/>
           </Button>
           <Button
             onClick={() => router.push(`${pathname}/submit`)}
             variant='ghost'
             size="icon"
           >
-            <Link className="h-5 w-5 text-gray-600 hover:text-emerald-700"/>
+            <Link className="h-5 w-5 text-gray-600 hover:text-blue-700"/>
           </Button>
         </div>
 

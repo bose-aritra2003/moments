@@ -55,7 +55,7 @@ const UserAccountNav: FC<UserAccountNavProps> = ({ user }) => {
               }}
             />
           ) : (
-            <Menu className="h-9 w-9 p-1 rounded-md hover:bg-gray-200 transition-colors text-emerald-900" />
+            <Menu className="h-9 w-9 p-1 rounded-md hover:bg-gray-200 transition-colors text-blue-900" />
           )
         }
       </DropdownMenuTrigger>

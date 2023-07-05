@@ -85,7 +85,7 @@ const PostVoteClient: FC<PostVoteClientProps> = ({ postId, initialVoteCount, ini
         <ThumbsUp
           className={cn(
             "h-4 w-4",
-            {'text-emerald-500 fill-emerald-500': currentVote === 'UP'}
+            {'text-blue-500 fill-blue-500': currentVote === 'UP'}
           )}
         />
       </Button>

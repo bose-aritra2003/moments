@@ -44,7 +44,7 @@ const SignIn: FC = () => {
           {' '}
           <span
             onClick={() => toggleVariant()}
-            className="hover:text-emerald-950 text-sm underline underline-offset-4 cursor-pointer transition-colors"
+            className="hover:text-blue-950 text-sm underline underline-offset-4 cursor-pointer transition-colors"
           >
             { variant === 'signin' ? 'Sign up' : 'Sign in' }
           </span>

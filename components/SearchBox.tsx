@@ -45,7 +45,7 @@ const SearchBox: FC = () => {
   return (
     <>
       <Search
-        className="h-8 w-8 p-1 rounded-md hover:bg-gray-200 transition-colors text-emerald-900 cursor-pointer"
+        className="h-8 w-8 p-1 rounded-md hover:bg-gray-200 transition-colors text-blue-900 cursor-pointer"
         onClick={() => setOpen(true)}
       />
       <CommandDialog
@@ -70,7 +70,7 @@ const SearchBox: FC = () => {
                     router.refresh();
                   }}
                 >
-                  <HeartHandshake className="mr-2 h-5 w-5 text-emerald-700" />
+                  <HeartHandshake className="mr-2 h-5 w-5 text-blue-700" />
                   <Link
                     href={`/c/${community.name}`}
                     onClick={() => setOpen(false)}

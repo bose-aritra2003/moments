@@ -22,7 +22,7 @@ const Navbar = async () => {
             alt="logo"
             className="h-10 w-10"
           />
-          <p className="text-emerald-900 text-2xl font-medium md:block">
+          <p className="text-blue-900 text-2xl font-bold md:block">
             Moments
           </p>
         </Link>
@@ -30,13 +30,13 @@ const Navbar = async () => {
         <div className="flex gap-4 md:gap-6 items-center">
           <div className="gap-6 hidden md:flex text-gray-600 font-medium text-lg">
             <Link
-              className="hover:text-emerald-950 transition-colors"
+              className="hover:text-blue-950 transition-colors"
               href={'/'}
             >
               Home
             </Link>
             <Link
-              className="hover:text-emerald-950 transition-colors"
+              className="hover:text-blue-950 transition-colors"
               href={'/explore'}
             >
               Explore
@@ -44,14 +44,14 @@ const Navbar = async () => {
             {
               session?.user ? (
                 <Link
-                  className="hover:text-emerald-950 transition-colors"
+                  className="hover:text-blue-950 transition-colors"
                   href={'/settings'}
                 >
                   Settings
                 </Link>
               ) : (
                 <Link
-                  className="hover:text-emerald-950 transition-colors"
+                  className="hover:text-blue-950 transition-colors"
                   href={'/sign-in'}
                 >
                   Sign in

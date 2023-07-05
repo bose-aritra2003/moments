@@ -22,8 +22,8 @@ const Home = () => {
         {/* info */}
         <div className="flex flex-col space-y-6 order-last">
           <div className="hidden md:block overflow-hidden h-fit rounded-lg border shadow border-gray-200">
-            <div className="bg-emerald-100 px-6 py-4">
-              <p className="font-semibold py-3 flex items-center gap-1.5 text-emerald-900">
+            <div className="bg-blue-100 px-6 py-4">
+              <p className="font-semibold py-3 flex items-center gap-1.5 text-blue-900">
                 <HeartHandshake className="w-5 h-5"/>
                 Start your own community
               </p>
