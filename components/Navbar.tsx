@@ -22,7 +22,7 @@ const Navbar = async () => {
             alt="logo"
             className="h-10 w-10"
           />
-          <p className="text-blue-900 text-2xl font-bold md:block">
+          <p className="text-blue-950 text-2xl font-bold md:block">
             Moments
           </p>
         </Link>
